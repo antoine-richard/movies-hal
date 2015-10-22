@@ -11,6 +11,6 @@
   "devDependencies": {
     "halacious": "^3.3.3",
     "hapi": "^10.5.0",
-    "hapi-negotiator": "^2.0.1"
+    "lodash": "^3.10.1"
   }
 }
