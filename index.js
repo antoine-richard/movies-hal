@@ -4,7 +4,13 @@ var halacious = require('halacious');
 var server = new hapi.Server();
 server.connection({ port: 8080 });
 
-server.register(halacious, function(err){
+server.register({
+    register: halacious,
+    options: {
+        mediaTypes: ['application/hal+json'],
+        apiPath: ''
+    }
+}, function(err){
     if (err) console.log(err);
 });
 
